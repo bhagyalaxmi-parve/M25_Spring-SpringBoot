@@ -22,7 +22,6 @@ public class Airtel  implements Sim{
 		System.out.println("Airtel class constructor");
 	}
 	
-	//inheriting the properties of sim interface
 	
 	
 	

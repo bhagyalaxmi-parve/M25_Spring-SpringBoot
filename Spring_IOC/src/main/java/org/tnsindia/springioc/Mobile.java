@@ -26,18 +26,21 @@ public class Mobile {
 		@SuppressWarnings("resource")
 		ApplicationContext c = new ClassPathXmlApplicationContext("beans.xml");
 		System.out.println("config...loaded");
-		
-		
-		
-		Sim a = c.getBean("sim", Sim.class);
+
+	/*
+		Airtel a = (Airtel)c.getBean("airtel");
 		a.calling();
 		a.data();
-				
+	
+		Jio j = (Jio)c.getBean("jio");
+		j.calling();
+		j.data();   */
 		
-//		
-//		Jio j = (Jio)c.getBean("jio");
-//		j.calling();
-//		j.data();
+		
+
+		Sim a1 = c.getBean("sim", Sim.class);
+		a1.calling();
+		a1.data();
 				
 	}
 
