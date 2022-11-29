@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+
+       <!-- Dependency in the form of Literals  
+             Student_1 
+       
+	<bean id ="s1" class="org.tnsindia.di1.Student_1">
+	
+	<property name="Student_Name" value="bhagyalaxmi parve"></property>
+	<property name="Roll_No" value="121"></property>
+
+	</bean>
+	
+	
+	<bean id ="s2" class="org.tnsindia.di1.Student_1">
+	
+	<property name="Student_Name" value="Aanand "></property>
+	<property name="Roll_No" value="131"></property>
+
+	</bean>          -->
+	
+	
+	
+	<!-- Dependency in the form of Constructor arguments
+	
+	<bean id ="s1" class="org.tnsindia.di1_2.Student_2">
+	<constructor-arg name="name"  value="bhagyalaxmi parve"></constructor-arg>
+	<constructor-arg name="roll_No"  value="1001"></constructor-arg>
+	<constructor-arg name="mobile_No"  value="86045622"></constructor-arg>
+	
+	</bean> 
+	
+	
+	
+	<bean id ="s2" class="org.tnsindia.di1_2.Student_2">
+	<constructor-arg name="name"  value="sakshi"></constructor-arg>
+	<constructor-arg name="roll_No"  value="1002"></constructor-arg>
+	<constructor-arg name="mobile_No"  value="1234556720"></constructor-arg>
+	
+	</bean>     -->
+	
+	
+	
+
+	<!-- Dependency in the form of Objects
+
+	<bean id ="s1" class="org.tnsindia.di3.Student_3">
+	<property name="math">
+	<bean class="org.tnsindia.di3.MathCheat"></bean>
+	</property>
+	</bean>    
+	-->
+	
+	
+	
+	
+	<!-- Dependency in the form of Collection-->
+	
+	<bean id="s1" class="org.tnsindia.di3.Country">
+	
+	<property name="Fruits">
+	
+	<list>
+	<value>Mango</value>
+	<value>Grape</value>
+	<value>Apple</value>
+	</list>
+	
+	</property>
+	
+	
+	
+	<property name="Cricketers">
+	
+	<set>
+	<value>Sachin Tendulkar</value>
+	<value>Virat Kohli</value>
+	<value>Yuvraj Singh</value>
+	<value>Mahendrasingh Dhoni</value>
+	</set>
+	
+	</property>
+	
+	
+	
+	
+	<property name="Country_Capital">
+	
+	<map>
+	<entry key="India"  value="New Delhi"></entry>
+	<entry key="Russia"  value="Moscow"></entry>
+	<entry key="France"  value="Paris"></entry>
+	</map>
+	
+	</property>
+	
+	
+	</bean>
+
+	
+</beans>
+
