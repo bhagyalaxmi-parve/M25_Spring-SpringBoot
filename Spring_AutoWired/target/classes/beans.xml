@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+
+
+   <!--<bean id ="heart" class="org.tnsindia.springautowired.Heart"/> --> 
+    <!-- AutoWired =byName
+	<bean id ="human" class="org.tnsindia.springautowired.Human"  autowire="byName"> -->
+	
+	 <!-- AutoWired =byType
+	<bean id ="human" class="org.tnsindia.springautowired.Human"  autowire="byType">  -->
+	
+	
+	<!-- Constructor-->
+	<!--<bean id ="human" class="org.tnsindia.springautowired.Human"  autowire="constructor"> --> 
+	
+	
+		
+		 
+ 	<context:annotation-config></context:annotation-config>
+	<bean id ="Humanheart" class="org.tnsindia.springautowired.Heart">
+	<property name="NameofAnimal" value="Human" />
+	<property name="No_ofHeart" value="1" />
+	</bean>
+	
+
+	<bean id ="Octopusheart" class="org.tnsindia.springautowired.Heart">
+	<property name="NameofAnimal" value="Octopus" />
+	<property name="No_ofHeart" value="3" />
+	</bean>
+	
+	
+	
+	<bean id ="Monkeyheart" class="org.tnsindia.springautowired.Heart">
+	<property name="NameofAnimal" value="Monkey" />
+	<property name="No_ofHeart" value="1" />
+	</bean>
+	
+	
+	<bean id ="human" class="org.tnsindia.springautowired.Human" >
+	
+	</bean>
+	
+</beans>
